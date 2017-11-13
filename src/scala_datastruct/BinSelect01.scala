@@ -1,6 +1,7 @@
 package scala_datastruct
 
 object BinSelect01 {
+  //二分法查找数据，前提：查找的数据集是已经排序的
   def main(arg:Array[String])={
     
     
@@ -24,7 +25,6 @@ object BinSelect01 {
     
    
      while(low<high){
-      
       
       search match {
         case search if search>arr(middle) =>{low=middle; middle=(high+1-low)/2+low;}
