@@ -1,0 +1,4 @@
+0,huanw,黄五
+1,wangba,王八
+1,zhangsan,张三
+0,lisi,李四
