@@ -9,7 +9,7 @@ public class Prim {
         int[][] map = new int[][] {  
                 { MAX, 2, 14, 1},  
                 { 2, MAX, 5, MAX },  
-                { 14, 5, MAX, 14},  
+                { 14, 5, MAX, 8},  
                 { 1, MAX, 8,MAX }
                
                };  
@@ -38,6 +38,7 @@ public class Prim {
                 mid[i]=0;  
             }  
             list.add(c[0]);  
+            
             //一共需要加入n-1个点  
             for(i=1;i<n;i++)  
             {  
@@ -54,7 +55,8 @@ public class Prim {
                  }  
                    
                  if(minid==0) return;  
-                 list.add(c[minid]);  
+                 list.add(c[minid]);
+                 
                  lowcost[minid]=0;  
                  sum+=min;  
                  System.out.println(c[mid[minid]] + "到" + c[minid] + " 权值：" + min);  

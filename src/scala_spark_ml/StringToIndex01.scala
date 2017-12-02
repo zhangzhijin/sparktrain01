@@ -43,6 +43,8 @@ object StringToIndex01 {
 val stringIndexModel=new StringIndexer().setInputCol("zh_name").setOutputCol("indexFromString").fit(df);
  var stringIndexModelDF=stringIndexModel.transform(df)
  
+ 
+ 
   //var label=stringIndexModel.labels ;
    
   stringIndexModelDF.show();
