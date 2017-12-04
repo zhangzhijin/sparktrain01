@@ -46,7 +46,8 @@ val stringIndexDF=userStringIndexDF.toDF();
 
    
   var trainDF=stringIndexDF.filter(df("rate")<=2.toDouble);
-    var testDF=stringIndexDF.filter(df("rate")>2.toDouble);
+    var testDF=stringIndexDF.filter(df("rate")>2.toDouble); 
+    
    
  val als=new ALS().setUserCol("indexUserid").setItemCol("indexStock").setRatingCol("rate").setRegParam(0.01);
   val alsModel= als.fit(trainDF).setPredictionCol("preCol");
